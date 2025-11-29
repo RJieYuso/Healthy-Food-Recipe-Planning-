@@ -59,3 +59,75 @@ A big thanks to our dedicated team (Group 26) for their contributions to this pr
 *   **FATIN NURQASDINA BINTI RASHID** - Module 3
 *   **MUHAMMAD AKMAL BAIHAQI BIN KHAIRUL ANAM MAK** - Module 2
 *   **DHESEETHRA A/P BALAKRISHNAN** - Module 1
+
+API contract:
+{
+  "userProfile": {
+    "endpoint": "/api/users/{id}",
+    "method": "POST",
+    "request": {
+      "userId": "string",
+      "healthConditions": ["diabetes", "hypertension", "allergies"],
+      "dietaryRestrictions": ["vegetarian", "vegan", "gluten-free"],
+      "age": "number",
+      "weight": "number",
+      "height": "number"
+    },
+    "response": {
+      "userId": "string",
+      "healthScore": "number (1-100)",
+      "nutritionPlan": {
+        "dailyCalories": "number",
+        "macronutrients": {
+          "protein": "string",
+          "carbs": "string", 
+          "fats": "string"
+        },
+        "recommendedFoods": ["array of strings"]
+      }
+    }
+  },
+  
+  "ingredientPrediction": {
+    "endpoint": "/api/predict-condition",
+    "method": "POST", 
+    "request": {
+      "ingredientType": "string (vegetable|fruit|dairy|meat|grain)",
+      "purchaseDate": "ISO date string",
+      "expiryDate": "ISO date string (optional)",
+      "storageCondition": "string (fridge|freezer|pantry)"
+    },
+    "response": {
+      "condition": "string (Good|Warning|Critical)",
+      "daysUntilExpiry": "number",
+      "confidence": "number (0-1)",
+      "recommendation": "string"
+    }
+  },
+  
+  "recipeRecommendation": {
+    "endpoint": "/api/recommend-recipes", 
+    "method": "POST",
+    "request": {
+      "availableIngredients": ["array of ingredient names"],
+      "userPreferences": {
+        "cuisine": ["array of preferred cuisines"],
+        "cookingTime": "number (max minutes)",
+      },
+      "healthConstraints": ["array of restrictions"]
+    },
+    "response": {
+      "recommendations": [
+        {
+          "recipeId": "string",
+          "title": "string", 
+          "matchScore": "number (0-100)",
+          "ingredientsUsed": ["array"],
+          "missingIngredients": ["array"],
+          "cookingTime": "number",
+          "nutritionScore": "number"
+        }
+      ]
+    }
+  }
+}
