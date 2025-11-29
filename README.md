@@ -116,7 +116,6 @@ This document describes the available API endpoints.
   - `userPreferences`: 
     - `cuisine`: (array) List of preferred cuisines (e.g., Italian, Mexican).
     - `cookingTime`: (number) Maximum cooking time in minutes.
-    - `difficulty`: (string) Difficulty level (e.g., easy, medium, hard).
   - `healthConstraints`: (array) List of health constraints (e.g., vegetarian, gluten-free).
 
 - **Response**:
