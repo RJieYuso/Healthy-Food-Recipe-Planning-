@@ -9,24 +9,45 @@ In today's fast-paced society, many people struggle to plan healthy meals, often
 ---
 
 ## 🚀 Modules Under Development
+1. User Ingredient & Nutrition Module
 
-This project is divided into the following modules, with each team member leading the development of a specific component.
+  - Create User Profile API
+  - Implement health condition validation
+  - Setup Cosmos DB (Microsoft Azure) Users collection
 
-*   **User Profile & Pantry Module**
-    *   **Developer:** FATIN NURQASDINA BINTI RASHID
-    *   **Description:** This module handles user authentication (registration and login), manages personal dietary profiles (including health goals, allergies, and food preferences), and allows users to maintain a virtual inventory of ingredients in their pantry.
+  - Develop nutrition planning logic
+  - Implement food expiry tracking
+  - Create notification system for expiry
 
-*   **Personalized Recommendation Engine**
-    *   **Developer:** HO RONG JIE
-    *   **Description:** As the core "brain" of the system, this backend module uses a Knowledge-Based Recommender System. It processes the user's profile and pantry data to intelligently filter a recipe database, providing a ranked list of the most suitable recipes.
+2. Ingredients Condition Visualization Module
 
-*   **Recipe Display Module**
-    *   **Developer:** MUHAMMAD AKMAL BAIHAQI BIN KHAIRUL ANAM MAK
-    *   **Description:** This frontend module fetches and displays recipe details in a user-friendly interface. It presents the ingredients, step-by-step cooking instructions, and key nutritional information like calories and protein content.
+  - Research AI models for food prediction
+  - Setup Azure Machine Learning workspace
+  - Create ingredient condition prediction API
 
-*   **Database & System Integration**
-    *   **Developer:** DHESEETHRA A/P BALAKRISHNAN
-    *   **Description:** This role focuses on designing and managing the project's database schema, ensuring data integrity, and integrating the frontend and backend modules so they communicate effectively.
+  - Train initial AI model
+  - Develop visualization data endpoints
+  - Implement condition scoring system
+
+3. Application UI Module
+
+  - Setup React Native project
+  - Create basic navigation structure
+  - Develop user input forms
+
+  - Implement recipe display components
+  - Create ingredient management UI
+  - Develop settings and profile screens
+
+4. Recipe Recommendation AI Module
+
+  - Setup recommendation algorithm
+  - Create recipe database structure
+  - Develop rating system API
+
+  - Implement collaborative filtering
+  - Train recommendation model
+  - Create recommendation endpoints
 
 ---
 
@@ -34,7 +55,7 @@ This project is divided into the following modules, with each team member leadin
 
 A big thanks to our dedicated team (Group 26) for their contributions to this project.
 
-*   **HO RONG JIE** - *Project Leader, Personalized Recommendation Engine & Backend*
-*   **FATIN NURQASDINA BINTI RASHID** - *User Profile & Pantry Module (Frontend)*
-*   **MUHAMMAD AKMAL BAIHAQI BIN KHAIRUL ANAM MAK** - *Recipe Display Module (Frontend)*
-*   **DHESEETHRA A/P BALAKRISHNAN** - *Database & System Integration*
+*   **HO RONG JIE** - Module 4
+*   **FATIN NURQASDINA BINTI RASHID** - Module 3
+*   **MUHAMMAD AKMAL BAIHAQI BIN KHAIRUL ANAM MAK** - Module 2
+*   **DHESEETHRA A/P BALAKRISHNAN** - Module 1
